@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.nav-list{
+    display: flex;
+    width: 60%;
+    align-items: center;
+    margin: 10px 0;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    
+}
+.nav-list li a:hover{
+ color: tomato;   
+}
+.nav-list li{
+    list-style: none;
+    padding: 0px 14px;
+}
+
+.rightNav{
+    display: flex;
+    padding: 10px;
+    width: 40%;
+    justify-content: flex-end;
+}
+.logo img{
+    width: 35px;
+    border-radius: 50%;
+    margin: 0 6px;
+}
+
+.background{
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url('../img/bg2.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstSec{
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url('../img/bg2.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+#search{
+    padding: 0 8px;
+    margin: 10px 0;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.btn-sm{
+    padding: 11px;
+    margin: 4px 8px;
+    color: white;
+    font-size: 14px;
+    background: none;
+    border-radius: 10px;
+    border: 2px white solid;
+    cursor: pointer;
+}
+
+.btn{
+    padding: 11px;
+    margin: 4px 8px;
+    color: white;
+    font-size: 14px;
+    background: #273c75;
+    border-radius: 30px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.buttons{
+    margin-top: 10px;
+}
+.buttons .btn:hover{
+    color: #273c75;
+    background: white;
+}
+.rightNav button:hover{
+    color: #44bd32;
+    border: 2px solid #44bd32;
+}
+
+.firstSec{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+.fhalf{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /* width: 80%; */
+}
+.shalf{
+    width: 30%;
+}
+.shalf img{
+    height: 200px;
+    border-radius: 33%;
+    padding: 0 45px;
+}
+
+.text-big{
+    font-size: 41px;
+    font-family: 'Ubuntu', sans-serif;;
+}
+.text-small{
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+}
+
+.content{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+}
+.contentleft{
+    display: flex;
+    padding: 30px;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+}
+.paras{
+    display: flex;
+    flex-direction: column;
+}
+.thumbnail{
+    padding: 32px;
+}
+.thumbnail img{
+    border-radius: 50%;
+}
+.sectionSubTag{
+    margin-top: 10px;
+}
+.secRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    /* background-color: #2d3436; */
+    /* background-color: #2c3e50; */
+    background-color: #1e272e;
+    height: 80vh;
+    
+}
+.text-center{
+    text-align: center;
+}
+.contact p{
+    color: white;
+    padding: 36px;
+}
+.form{
+    max-width: 25%;
+    margin: auto;
+    font-family:Helvetica, sans-serif;
+}
+.form input{
+    color: white;
+    background-color: transparent;
+    width: 100%;
+    font-size: 16px;
+    border: 2px solid #b2bec3;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    margin: 6px;
+}
+.form button{
+    font-size: 18px;
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+    color: #b2bec3;
+    border: 2px solid #b2bec3;
+    border-radius: 10px;
+    background: transparent;
+}
+.form button:hover{
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+    cursor: pointer;
+}
+.form textarea{
+    width: 100%;
+    font-size: 15px;
+    border: 2px solid #b2bec3;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 6px;
+}
+.subbtn{
+    display: flex;
+}
+
+@media (max-width:700px){
+    .navbar{
+        flex-direction: column;
+        position: relative;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+    .nav-list li {
+        padding: 12px 16px;
+    }
+    .rightNav {
+        padding: 0 10px;
+    }
+
+
+}

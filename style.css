@@ -55,10 +55,11 @@
     background-blend-mode: darken;
 }
 .firstSec{
-    background-color: rgba(0, 0, 0, 0.5);
-    background-image: url('bg2.jpg');
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url('ic.jpg');
     background-size: cover;
     background-blend-mode: darken;
+    height: 100vh;
 }
 #search{
     padding: 0 8px;
@@ -90,6 +91,7 @@
 }
 .buttons{
     margin-top: 10px;
+    display: flex;
 }
 .buttons .btn:hover{
     color: #273c75;
@@ -100,9 +102,6 @@
     border: 2px solid #44bd32;
 }
 
-.firstSec{
-    height: 100%;
-}
 .box-main{
     display: flex;
     align-items: center;
@@ -114,21 +113,14 @@
 }
 .fhalf{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    padding: 10px;
-    /* width: 80%; */
+    height: 80vh;
 }
-.shalf{
-    width: 30%;
-}
-.shalf img{
-    height: 200px;
-    border-radius: 33%;
-    padding: 0 45px;
-}
-
 .text-big{
     font-size: 41px;
+    margin-bottom: 10px;
     font-family: 'Ubuntu', sans-serif;;
 }
 .text-small{
@@ -170,12 +162,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .contact{
     /* background-color: #2d3436; */
     /* background-color: #2c3e50; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #1e272e;
-    height: 80vh;
+    height: 100vh;
     
 }
 .text-center{
@@ -186,7 +183,7 @@
     padding: 36px;
 }
 .form{
-    max-width: 25%;
+    max-width: 30%;
     margin: auto;
     font-family:Helvetica, sans-serif;
 }
@@ -245,6 +242,7 @@
 
 }
 
+
 @media (max-width:730px){
     .navbar{
         flex-direction: column;
@@ -261,17 +259,20 @@
         flex-direction: column;
         width: 50%;
     }
+    .secRight{
+        max-width: 65%;
+    }
     #search{
         padding:7px 8px;
         width: 100%;
     }
-    .content{
+    .content,.contentleft{
         margin-left: auto;
         flex-direction: column;
         max-width: 50%;
     }
-    .form button{
-        width: 70%;
+    .form{
+        max-width: 50%;
     }
     .btn-sm{
         width: 40%;
@@ -288,6 +289,12 @@
     }
     .visiblity{
         opacity: 0;
-    }
 
+    }
+    .paras{
+        width: 286px;
+    }
+    .contact{
+        height: 80vh;
+    }
 }

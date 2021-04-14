@@ -62,15 +62,35 @@
     height: 100vh;
 }
 #search{
-    padding: 0 8px;
-    margin: 10px 0;
+    /* padding: 4px 18px;
+    margin: 10px 0; */
     background-color: transparent;
     color: white;
-    border: 1px solid white;
+    border: none;
+    padding-left: 5px;
+    height: inherit;
+    width: inherit;
+    outline:none;
+    margin-left: 5px;
+}
+.searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 15px;
+    margin: 10px 0;
+    height: 26px;
+    outline: none;
+    border: 2px solid white;
+    
+}
+.searchbar i{
+    margin: 0 10px;
 }
 .btn-sm{
-    padding: 11px;
-    margin: 4px 8px;
+    padding: 2px 18px;
+    margin: 8px 8px;
     color: white;
     font-size: 14px;
     background: none;
@@ -80,23 +100,24 @@
 }
 
 .btn{
-    padding: 11px;
+    padding: 4px 18px;
     margin: 4px 8px;
     color: white;
     font-size: 14px;
     background: #273c75;
     border-radius: 30px;
     border: 2px solid white;
-    cursor: pointer;
+    cursor: pointer; 
 }
+
 .buttons{
     margin-top: 10px;
     display: flex;
 }
 .buttons .btn:hover{
     color: #273c75;
-    background: white;
     border: 4px solid #273c75;
+    background: white;
 }
 .rightNav button:hover{
     color: #44bd32;
@@ -202,7 +223,7 @@
 .form button{
     font-size: 18px;
     margin: auto;
-    padding: 10px;
+    padding: 4px 18px;
     width: 50%;
     color: #b2bec3;
     border: 2px solid #b2bec3;
@@ -243,6 +264,8 @@
 
 }
 
+
+
 @media (max-width:730px){
     .navbar{
         flex-direction: column;
@@ -270,7 +293,10 @@
         padding: 7px 8px;
         width: 100%;
         font-size: 20px;
-        border: 2px solid;
+        /* border: 2px solid; */
+        border-radius: 15px;
+    }
+    .searchbar{
         border-radius: 15px;
     }
     .content,.contentleft{
@@ -282,7 +308,7 @@
         max-width: 50%;
     }
     .btn-sm{
-        width: 40%;
+        width: 50%;
         font-size: 20px;
         margin:auto auto 12px auto;
     }
